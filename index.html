@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Vehicle Servicing App - AI-Powered Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-car"></i>
+                    <span>SmartService</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#design-plan" class="nav-link">Design Plan</a>
+                    <a href="#requirements" class="nav-link">Requirements</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#home" class="nav-link-mobile">Home</a>
+                <a href="#features" class="nav-link-mobile">Features</a>
+                <a href="#design-plan" class="nav-link-mobile">Design Plan</a>
+                <a href="#requirements" class="nav-link-mobile">Requirements</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Smart Vehicle Servicing App</h1>
+                    <p class="hero-subtitle">AI-powered platform for damage detection, price prediction, and smart service booking</p>
+                    <p class="hero-description">
+                        Revolutionizing vehicle maintenance with artificial intelligence, real-time analytics, and seamless user experience.
+                    </p>
+                    <button class="cta-button" onclick="scrollToSection('features')">
+                        Explore Design
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <div class="mockup-container">
+                        <img src="original-71f3476679ad74fb63368306abb1cd91.gif" alt="Smart Vehicle App Mockup" class="mockup-image">
+                        <div class="ai-badge">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-description">
+                    Our Smart Vehicle Servicing App leverages cutting-edge AI technology to transform how vehicle owners and service centers interact, providing intelligent damage detection, accurate price predictions, and streamlined service management.
+                </p>
+            </div>
+
+            <div class="overview-grid">
+                <div class="card card-blue">
+                    <div class="card-header">
+                        <i class="fas fa-users card-icon"></i>
+                        <h3 class="card-title">Vehicle Owners</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="feature-list">
+                            <li>• Quick damage assessment using AI</li>
+                            <li>• Instant price estimates</li>
+                            <li>• Easy service booking</li>
+                            <li>• Track service history</li>
+                            <li>• Real-time queue updates</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card card-green">
+                    <div class="card-header">
+                        <i class="fas fa-building card-icon"></i>
+                        <h3 class="card-title">Service Centers</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="feature-list">
+                            <li>• Automated damage analysis</li>
+                            <li>• Efficient queue management</li>
+                            <li>• Customer feedback insights</li>
+                            <li>• Service history tracking</li>
+                            <li>• Revenue optimization</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Key Features</h2>
+                <p class="section-description">Powered by advanced AI and modern technology</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-brain feature-icon purple"></i>
+                        <h3 class="feature-title">AI Damage Detection</h3>
+                    </div>
+                    <p class="feature-description">
+                        Advanced computer vision algorithms analyze vehicle damage from photos with 95% accuracy.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-chart-line feature-icon blue"></i>
+                        <h3 class="feature-title">Price Prediction</h3>
+                    </div>
+                    <p class="feature-description">
+                        Machine learning models provide accurate repair cost estimates based on damage assessment and market data.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-clock feature-icon orange"></i>
+                        <h3 class="feature-title">Real-time Queue Management</h3>
+                    </div>
+                    <p class="feature-description">
+                        Live updates on service queue status, estimated wait times, and appointment scheduling.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-mobile-alt feature-icon green"></i>
+                        <h3 class="feature-title">Service Booking</h3>
+                    </div>
+                    <p class="feature-description">
+                        Seamless booking system with calendar integration and automated reminders.
+                    </p>
+                </div>
+
+                
+
+                <div class="feature-card">
+                    <div class="feature-header">
+                        <i class="fas fa-history feature-icon indigo"></i>
+                        <h3 class="feature-title">Vehicle History Tracking</h3>
+                    </div>
+                    <p class="feature-description">
+                        Comprehensive maintenance records and service history for informed decision-making.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements Section -->
+    <section id="requirements" class="requirements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Requirement Specifications</h2>
+                <p class="section-description">Comprehensive technical and functional requirements</p>
+            </div>
+
+            <div class="requirements-grid">
+                <div class="card requirements-card">
+                    <div class="card-header">
+                        <h3 class="requirements-title blue">Functional Requirements</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>User registration and authentication system</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Photo upload and AI damage detection</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Service booking and appointment management</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Real-time notifications and updates</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Payment gateway integration</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Review and rating system</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Service history and reports</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-check-circle check-icon"></i>
+                                <span>Admin dashboard for service centers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card requirements-card">
+                    <div class="card-header">
+                        <h3 class="requirements-title purple">Non-Functional Requirements</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <i class="fas fa-bolt requirement-icon yellow"></i>
+                                <span>Response time under 3 seconds for all operations</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-shield-alt requirement-icon blue"></i>
+                                <span>99.9% uptime and high availability</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-globe requirement-icon green"></i>
+                                <span>Cross-platform compatibility (iOS, Android, Web)</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-users requirement-icon orange"></i>
+                                <span>Support for 10,000+ concurrent users</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-lock requirement-icon red"></i>
+                                <span>GDPR compliance and data encryption</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-mobile-alt requirement-icon indigo"></i>
+                                <span>Responsive design for all screen sizes</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-chart-line requirement-icon purple"></i>
+                                <span>Scalable architecture for future growth</span>
+                            </div>
+                            <div class="requirement-item">
+                                <i class="fas fa-wifi requirement-icon teal"></i>
+                                <span>Offline functionality for core features</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Plan Section -->
+    <section id="design-plan" class="design-plan">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Detailed Design Plan</h2>
+                <p class="section-description">Comprehensive architecture and technology stack</p>
+            </div>
+
+            <div class="design-grid">
+                <div class="card design-card">
+                    <div class="card-header">
+                        <h3 class="design-title blue">Frontend Architecture</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="design-list">
+                            <div class="design-item">
+                                <i class="fas fa-globe design-icon blue"></i>
+                                <span><strong>Web Application:</strong> React.js with TypeScript</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-mobile-alt design-icon green"></i>
+                                <span><strong>Mobile App:</strong> React Native for iOS & Android</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-check-circle design-icon purple"></i>
+                                <span><strong>State Management:</strong> Redux Toolkit</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-star design-icon yellow"></i>
+                                <span><strong>UI Framework:</strong> Material-UI / Tailwind CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card design-card">
+                    <div class="card-header">
+                        <h3 class="design-title green">Backend Architecture</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="design-list">
+                            <div class="design-item">
+                                <i class="fas fa-bolt design-icon green"></i>
+                                <span><strong>Runtime:</strong> Node.js with Express.js</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-shield-alt design-icon orange"></i>
+                                <span><strong>Authentication:</strong> Firebase Auth</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-globe design-icon blue"></i>
+                                <span><strong>API:</strong> RESTful APIs with GraphQL</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-clock design-icon purple"></i>
+                                <span><strong>Real-time:</strong> Socket.io for live updates</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card design-card">
+                    <div class="card-header">
+                        <h3 class="design-title purple">Database & Storage</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="design-list">
+                            <div class="design-item">
+                                <i class="fas fa-database design-icon blue"></i>
+                                <span><strong>Primary DB:</strong> Cloud Firestore</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-chart-line design-icon green"></i>
+                                <span><strong>Alternative:</strong> MongoDB Atlas</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-cloud design-icon orange"></i>
+                                <span><strong>File Storage:</strong> Firebase Storage</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-tachometer-alt design-icon red"></i>
+                                <span><strong>Caching:</strong> Redis for performance</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card design-card">
+                    <div class="card-header">
+                        <h3 class="design-title orange">AI Integration</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="design-list">
+                            <div class="design-item">
+                                <i class="fas fa-brain design-icon purple"></i>
+                                <span><strong>ML Framework:</strong> TensorFlow.js</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-eye design-icon blue"></i>
+                                <span><strong>Computer Vision:</strong> Google Vision API</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-chart-line design-icon green"></i>
+                                <span><strong>Price Prediction:</strong> Custom ML models</span>
+                            </div>
+                            <div class="design-item">
+                                <i class="fas fa-comments design-icon yellow"></i>
+                                <span><strong>Sentiment Analysis:</strong> Natural Language API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="architecture-diagram">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="architecture-title">System Architecture Overview</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="diagram-container">
+                            <img src="image copy 3.png" alt="System Architecture Diagram" class="architecture-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Stack -->
+    <section class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technology Stack</h2>
+                <p class="section-description">Modern technologies powering our solution</p>
+            </div>
+
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon-container blue">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <span class="tech-name">React</span>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon-container green">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <span class="tech-name">React Native</span>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon-container yellow">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <span class="tech-name">Node.js</span>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon-container orange">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <span class="tech-name">Firebase</span>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon-container purple">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <span class="tech-name">TensorFlow</span>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon-container indigo">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <span class="tech-name">Vision API</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Scope -->
+    <section class="future-scope">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Future Scope</h2>
+                <p class="section-description">Expanding possibilities and upcoming features</p>
+            </div>
+
+            <div class="future-grid">
+                <div class="future-card">
+                    <div class="future-header">
+                        <i class="fas fa-shield-alt future-icon blue"></i>
+                        <h3 class="future-title">Insurance Integration</h3>
+                    </div>
+                    <p class="future-description">
+                        Direct integration with insurance providers for seamless claim processing and coverage verification.
+                    </p>
+                </div>
+
+                <div class="future-card">
+                    <div class="future-header">
+                        <i class="fas fa-brain future-icon purple"></i>
+                        <h3 class="future-title">Advanced AI Detection</h3>
+                    </div>
+                    <p class="future-description">
+                        Real-time damage severity assessment with predictive maintenance recommendations.
+                    </p>
+                </div>
+
+                <div class="future-card">
+                    <div class="future-header">
+                        <i class="fas fa-check-circle future-icon green"></i>
+                        <h3 class="future-title">Fraud Detection</h3>
+                    </div>
+                    <p class="future-description">
+                        AI-powered fraud detection system to filter fake reviews and suspicious activities.
+                    </p>
+                </div>
+
+                <div class="future-card">
+                    <div class="future-header">
+                        <i class="fas fa-award future-icon yellow"></i>
+                        <h3 class="future-title">Loyalty Programs</h3>
+                    </div>
+                    <p class="future-description">
+                        Reward system for frequent users with points, discounts, and exclusive service benefits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-car"></i>
+                        <span>SmartService</span>
+                    </div>
+                    <p class="footer-description">
+                        Revolutionizing vehicle servicing with AI-powered solutions for a smarter, more efficient future.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Team Members</h3>
+                    <ul class="team-list">
+                        <li>John Smith - Project Lead</li>
+                        <li>Sarah Johnson - AI Engineer</li>
+                        <li>Mike Chen - Full Stack Developer</li>
+                        <li>Emily Davis - UI/UX Designer</li>
+                        <li>Alex Rodriguez - Mobile Developer</li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-heading">Contact Information</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>team@smartservice.app</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-linkedin"></i>
+                            <span>linkedin.com/company/smartservice</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 Smart Vehicle Servicing App. All rights reserved. | Designed for academic presentation purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
